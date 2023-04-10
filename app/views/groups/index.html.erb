@@ -4,10 +4,13 @@
 
 <div id="groups">
   <% @groups.each do |group| %>
-    <%= render group %>
-    <p>
-      <%= link_to "Show this group", group %>
-    </p>
+    <%= link_to group_expenses_path(group.id), class: 'btn btn-primary' do %>
+
+      <%= render group %>
+      <p>
+        <%= link_to "Show this group", group %>
+      </p>
+    <% end %>
   <% end %>
 </div>
 

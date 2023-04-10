@@ -6,12 +6,12 @@
 
   <p>
     <strong>Icon:</strong>
-    <%= group.icon %>
+    <img src=<%= group.icon %> alt=<%= group.name %> class="img-thumbnail icon">
   </p>
 
   <p>
     <strong>User:</strong>
-    <%= group.user_id %>
+    <%= current_user.name %>
   </p>
 
 </div>

@@ -4,7 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :validatable
 
-  has_many :groups, foreign_key: :user_id, dependent: :destroy
+  has_many :groups
+  has_many :expenses
 
   validates :name, presence: true, length: { minimum: 3, message: 'must be at least 3 characters long' }
   validates :email, presence: true, length: { minimum: 3, maximum: 105 },
