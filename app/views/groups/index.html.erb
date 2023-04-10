@@ -1,15 +1,9 @@
-<p style="color: green"><%= notice %></p>
-
 <h1>Groups</h1>
 
 <div id="groups">
   <% @groups.each do |group| %>
     <%= link_to group_expenses_path(group.id), class: 'btn btn-primary' do %>
-
       <%= render group %>
-      <p>
-        <%= link_to "Show this group", group %>
-      </p>
     <% end %>
   <% end %>
 </div>

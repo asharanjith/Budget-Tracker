@@ -10,6 +10,11 @@
   </p>
 
   <p>
+   <strong>Total amount :$</strong>
+    <%= group.expenses.sum(:amount) %>
+  </p>
+
+  <p>
     <strong>User:</strong>
     <%= current_user.name %>
   </p>
