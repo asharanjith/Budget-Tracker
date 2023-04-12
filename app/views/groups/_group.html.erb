@@ -1,22 +1,10 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
+<div id="<%= dom_id group %>" class="d-flex flex-row justify-content-between bg-white align-items-center p-2">
+  <p class="text-black-50">
+    <img src=<%= group.icon %> alt=<%= group.name %> class="img-thumbnail groupIcon">
     <%= group.name %>
   </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <img src=<%= group.icon %> alt=<%= group.name %> class="img-thumbnail icon">
-  </p>
-
-  <p>
-   <strong>Total amount :$</strong>
+  <p class="text-secondary">
+   <strong>$</strong>
     <%= group.expenses.sum(:amount) %>
   </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= current_user.name %>
-  </p>
-
 </div>

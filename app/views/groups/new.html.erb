@@ -1,9 +1,12 @@
-<h1>New group</h1>
+<div class="headerSignin d-flex flex-row mb-4 p-2 justify-content-between">
+  <%= link_to groups_path do %>
+    <h3 class="d-flex align-items-center"><i class="bi bi-arrow-left text-white "></i></h3>
+  <% end %>
+  <h5 class="d-flex align-items-center ">Add New Category</h5>
+  <%= link_to destroy_user_session_path, method: :delete do %>
+    <h3 class="d-flex align-items-center"><i class="bi bi-power text-white "></i></h3>
+  <% end %>
+</div>
 
 <%= render "form", group: @group %>
 
-<br>
-
-<div>
-  <%= link_to "Back to groups", groups_path %>
-</div>
