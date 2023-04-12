@@ -1,0 +1,31 @@
+<%= form_with(model: group) do |form| %>
+<div class="d-flex flex-column">
+  <% if group.errors.any? %>
+    <div style="color: red" class="alert alert-warning alert-dismissible fade show" role="alert">
+      <h2><%= pluralize(group.errors.count, "error") %> prohibited this Category from being saved:</h2>
+
+      <ul>
+        <% group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>
+  <% end %>
+
+  <div class="my-2">
+    <%= form.text_field :name, placeholder: "Name", class: "form-control" %>
+  </div>
+
+  <div class="my-2">
+    <%= form.text_field :icon, placeholder: "Icon URL", class: "form-control" %>
+  </div>
+
+  <div class="my-2">
+    <%= form.hidden_field :user_id, value: current_user.id %>
+  </div>
+
+    <strong><%= form.submit "SAVE", class: "btn text-white bottomArea" %></strong>
+<% end %>
+</div>

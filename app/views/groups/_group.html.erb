@@ -1,0 +1,15 @@
+<div id="<%= dom_id group %>" class="bg-white p-2 m-2">
+  <div class="d-flex flex-row justify-content-between  align-items-center ">
+  <p class="text-black-50">
+    <img src=<%= group.icon %> alt=<%= group.name %> class="img-thumbnail groupIcon">
+    <%= group.name %>
+  </p>
+  <p class="text-secondary">
+   <strong>$</strong>
+    <%= group.expenses.sum(:amount) %>
+  </p>
+  </div>
+  <p class="ms-4 ps-4 text-muted" style="font-size: 10px;">
+    <%= group.created_at.to_date.strftime("%d %b %Y")  %>
+  </p>
+</div>

@@ -1,0 +1,14 @@
+<div class="headerSignin d-flex flex-row mb-4 p-2 justify-content-between">
+
+  <%= link_to group_expenses_path do %>
+    <h3 class="d-flex align-items-center"><i class="bi bi-arrow-left text-white "></i></h3>
+  <% end %>
+
+  <h5 class="d-flex align-items-center ">New Transaction</h5>
+  
+  <%= link_to destroy_user_session_path, method: :delete do %>
+    <h3 class="d-flex align-items-center"><i class="bi bi-power text-white "></i></h3>
+  <% end %>
+</div>
+
+<%= render "form", expense: @expense %>

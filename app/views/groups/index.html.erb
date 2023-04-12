@@ -1,0 +1,21 @@
+<div class="headerSignin d-flex flex-row mb-4 p-2 justify-content-between ">
+<%= link_to destroy_user_session_path, method: :delete do %>
+  <h3 class="d-flex align-items-center"><i class="bi bi-power text-white "></i></h3>
+<% end %>
+<h5 class="d-flex align-items-center ">CATEGORIES</h5>
+<%= link_to new_group_path, class: "d-flex align-items-center" do %>
+  <h3><i class="bi bi-plus text-white"></i></h3>
+<% end %>
+</div>
+
+<div id="groups" class="bg-light overflow-scroll" style="height:60%;">
+  <% @groups.each do |group| %>
+    <%= link_to group_expenses_path(group.id), class: 'd-block p-2' do %>
+      <%= render group %>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="bottomArea">
+  <%= link_to "ADD NEW CATEGORY", new_group_path, class: "border border-white mt-2  " %>
+</div>

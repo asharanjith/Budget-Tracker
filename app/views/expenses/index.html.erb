@@ -1,0 +1,27 @@
+<div class="headerSignin d-flex flex-row   p-2 justify-content-between">
+  <%= link_to groups_path do %>
+    <h3 class="d-flex align-items-center"><i class="bi bi-arrow-left text-white "></i></h3>
+  <% end %>
+  <h5 class="d-flex align-items-center ">TRANSACTIONS</h5>
+  <%= link_to new_group_expense_path, class: "d-flex align-items-center" do %>
+    <h3><i class="bi bi-plus text-white"></i></h3>
+  <% end %>
+</div>
+
+<div id="expenses" class="bg-light" style="height:60%;">
+  
+  <div class="d-flex flex-row mb-2 py-2 px-4 justify-content-between bg-white">
+    <%= @group.name %>
+    <strong><p>$<%= @group.expenses.sum(:amount) %></p></strong>
+  </div>
+  <% if @expenses.empty? %>
+    <p class= 'd-block p-2  '>No expenses yet</p>
+  <% end%>
+    <% @expenses.each do |expense| %>    
+      <%= render expense %> 
+    <% end  %>
+</div>
+
+<div class="bottomArea ">
+<%= link_to "ADD NEW TRANSACTION", new_group_expense_path, class: "border border-white " %>
+</div>
