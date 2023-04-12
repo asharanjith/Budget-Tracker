@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  resources :groups do
-    resources :expenses
+  resources :groups, only: [:index, :new, :create] do
+    resources :expenses, only: [:index, :new, :create]
   end
 end
