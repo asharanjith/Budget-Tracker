@@ -36,13 +36,12 @@ The Budget Tracker app is a mobile web application where you can manage your bud
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Language</summary>
   <ul>
     <li><a href="https://rubyonrails.org/">Rails</a></li>
     <li><a href="https://www.postgresql.org/">Postgresql</a></li>
+    <li><a href="https://getbootstrap.com/">Styles using Bootstrap</a></li>
   </ul>
-</details>
+
 
 <!-- Features -->
 
@@ -55,7 +54,7 @@ The Budget Tracker app is a mobile web application where you can manage your bud
 
 ### Live Demo <a name="live-demo"></a>
 
-[Click here to see the live demo]()
+[Click here to see the live demo](https://money-minder-djf9.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,7 +98,7 @@ To run the project, execute the following command:
 
 To run tests, execute the following command:
 
-`bundle exec rspec`
+`rspec spec`
 
 NB: You need to create an `env` file for your database credentials
 
