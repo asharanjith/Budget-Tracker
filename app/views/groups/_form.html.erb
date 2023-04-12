@@ -1,14 +1,16 @@
 <%= form_with(model: group) do |form| %>
 <div class="d-flex flex-column">
   <% if group.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
+    <div style="color: red" class="alert alert-warning alert-dismissible fade show" role="alert">
+      <h2><%= pluralize(group.errors.count, "error") %> prohibited this Category from being saved:</h2>
 
       <ul>
         <% group.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
     </div>
   <% end %>
 
