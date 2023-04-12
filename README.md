@@ -32,17 +32,17 @@
 
 The Budget Tracker app is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Language</summary>
   <ul>
     <li><a href="https://rubyonrails.org/">Rails</a></li>
     <li><a href="https://www.postgresql.org/">Postgresql</a></li>
+    <li><a href="https://getbootstrap.com/">Styles using Bootstrap</a></li>
   </ul>
-</details>
+
 
 <!-- Features -->
 
@@ -55,7 +55,7 @@ The Budget Tracker app is a mobile web application where you can manage your bud
 
 ### Live Demo <a name="live-demo"></a>
 
-[Click here to see the live demo]()
+[Click here to see the live demo](https://money-minder-djf9.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,7 +99,7 @@ To run the project, execute the following command:
 
 To run tests, execute the following command:
 
-`bundle exec rspec`
+`rspec spec`
 
 NB: You need to create an `env` file for your database credentials
 
@@ -150,6 +150,8 @@ If you like this project by staring it.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for the providing support.
+
+Original design idea from [Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) and credits to [Gregoire Vella](https://www.behance.net/gregoirevella)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
