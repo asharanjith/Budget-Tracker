@@ -26,8 +26,6 @@ body {
 .splashScreen {
   background-color: white;
   height: 100vh;
-  width: 100%;
-  position: relative;
 }
 
 .splash {
@@ -49,10 +47,9 @@ body {
 }
 
 .splashbutton {
-  position: relative;
   width: 80%;
   margin: 0 auto;
-  margin-top: 60%;
+  padding-top:20%;
 }
 
 .headerSignin {
@@ -83,4 +80,21 @@ a {
   text-align: center;
   padding-top: 10px;
   margin-left: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .splash {
+    padding-top: 100px;
+  }
+  
+  .splashbutton {
+    width: 100%;
+    padding-top: 60%;
+  }
+  .bottomArea {
+    height: 100px;
+  }
+  .bottomArea a {
+    padding-top: 20px;
+  }
 }
