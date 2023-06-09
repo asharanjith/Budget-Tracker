@@ -62,7 +62,7 @@ a {
 }
 
 .bottomArea {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 80px;
@@ -80,6 +80,13 @@ a {
   text-align: center;
   padding-top: 10px;
   margin-left: 10%;
+}
+
+.groupBox{
+  width: 100%;
+  height: 75vh;
+  overflow: scroll;
+
 }
 
 @media only screen and (max-width: 600px) {

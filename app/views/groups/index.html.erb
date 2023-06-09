@@ -8,7 +8,7 @@
 <% end %>
 </div>
 
-<div id="groups" class="bg-light" style="height:60%;">
+<div id="groups" class="bg-light groupBox" >
   <% @groups.each do |group| %>
     <%= link_to group_expenses_path(group.id), class: 'd-block p-2  ' do %>
       <%= render group %>
